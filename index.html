@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uy Savdo</title>
+
+<style>
+/* --- Body va umumiy --- */
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#f2f2f2;
+}
+
+header{
+  background: darkblue;
+  color:white;
+  padding:30px 20px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:2.5em;
+}
+
+header p{
+  margin:5px 0 0 0;
+}
+
+/* --- Menu --- */
+nav{
+  background:#003366;
+  display:flex;
+  justify-content:center;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:15px 25px;
+  display:block;
+}
+
+nav a:hover{
+  background:#0055aa;
+}
+
+/* --- Uylar --- */
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:20px;
+}
+
+.card{
+  background:white;
+  width:300px;
+  margin:20px;
+  border-radius:10px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px 10px 0 0;
+}
+
+.card h3{
+  padding:10px;
+  margin:0;
+}
+
+.card p{
+  padding:0 10px 10px 10px;
+  margin:0;
+}
+
+.card button{
+  margin:10px;
+  padding:10px 20px;
+  background:green;
+  color:white;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+.card button:hover{
+  background:#006600;
+}
+
+/* --- Telefon va Telegram --- */
+.contact{
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:20px;
+}
+
+.contact a button{
+  padding:12px 25px;
+  font-size:16px;
+}
+
+/* --- Xarita --- */
+.map{
+  width:90%;
+  max-width:800px;
+  margin:30px auto;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>Uy Savdo</h1>
+<p>Eng yaxshi uylarni bizdan toping</p>
+</header>
+
+<nav>
+<a href="#uylar">Uylar</a>
+<a href="#contact">Aloqa</a>
+<a href="#map">Manzil</a>
+</nav>
+
+<section id="uylar" class="container">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6" alt="3 xonali uy">
+<h3>3 xonali uy</h3>
+<p>Narxi: 80 000$</p>
+<button>Sotib olish</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="4 xonali uy">
+<h3>4 xonali uy</h3>
+<p>Narxi: 120 000$</p>
+<button>Sotib olish</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="5 xonali uy">
+<h3>5 xonali uy</h3>
+<p>Narxi: 200 000$</p>
+<button>Sotib olish</button>
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+<a href="tel:+998901234567"><button>Telefon qilish</button></a>
+<a href="https://t.me/username"><button>Telegram yozish</button></a>
+</section>
+
+<section id="map" class="map">
+<h2 style="text-align:center;">Bizning manzil</h2>
+<iframe 
+src="https://www.google.com/maps?q=Tashkent&output=embed"
+width="100%" height="400" style="border:0;"></iframe>
+</section>
+
+</body>
+</html>
